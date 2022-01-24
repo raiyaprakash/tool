@@ -333,7 +333,17 @@ function gernatescript() {
         e.push(final)
     }
 
-        document.getElementById("smessage").value = e.join("\n")
+
+if (boldtelegram.checked) {
+            document.getElementById("smessage").value = e.join("\n").split('****').join('')
+        }
+		else {
+           document.getElementById("smessage").value = e.join("\n").split('**').join('')
+        }
+		
+		
+		
+        
     
 }
 </script>
