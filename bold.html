@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <title>WhatsApp Message Send</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<style>@-webkit-keyframes slidein{0%{opacity:0}20%,50%,80%{opacity:1;bottom:62px}to{opacity:0;bottom:-200px;visibility:hidden}}@keyframes slidein{0%{opacity:0}20%,50%,80%{opacity:1;bottom:62px}to{opacity:0;bottom:-200px;vibility:hidden}}body{background:#313030;margin:0;font-family:-apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Oxygen-Sans","Ubuntu","Cantarell","Helvetica Neue",sans-serif;padding:20px 0 0}textarea{width:99%;height:340px;padding:5px}.text-center,body,button,input{text-align:center}button,textarea,input{background:#555;color:#fff}button,input{box-sizing:border-box;font:inherit;font-size:14px;font-weight:500;line-height:1.2;cursor:pointer;border:2px solid transparent;padding:5px 10px;display:inline-block;margin:10px 5px}button:active,button:focus,input:focus,input:active{outline:0;border-color:#ff0}*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}.cnoti{display:flex;position:fixed;left:10px;bottom:0}.cnoti span{display:block;position:relative;bottom:-200px;width:240px;margin:0 auto;padding:10px;border-radius:4px;background-color:#222;color:#fefefe;line-height:22px;text-align:center;opacity:0;transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out;-webkit-animation:slidein 2s ease forwards;animation:slidein 2s ease forwards}
+<style>@-webkit-keyframes slidein{0%{opacity:0}20%,50%,80%{opacity:1;bottom:62px}to{opacity:0;bottom:-200px;visibility:hidden}}@keyframes slidein{0%{opacity:0}20%,50%,80%{opacity:1;bottom:62px}to{opacity:0;bottom:-200px;vibility:hidden}}body{background:#313030;margin:0;font-family:-apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Oxygen-Sans","Ubuntu","Cantarell","Helvetica Neue",sans-serif;padding:20px 0 0;color:#fff}textarea{width:99%;height:340px;padding:5px;}.text-center,body,button,input{text-align:center}button,textarea,input{background:#555;color:#fff}button,input{box-sizing:border-box;font:inherit;font-size:14px;font-weight:500;line-height:1.2;cursor:pointer;border:2px solid transparent;padding:5px 10px;display:inline-block;margin:10px 5px}button:active,button:focus,input:focus,input:active{outline:0;border-color:#ff0}*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}.cnoti{display:flex;position:fixed;left:10px;bottom:0}.cnoti span{display:block;position:relative;bottom:-200px;width:240px;margin:0 auto;padding:10px;border-radius:4px;background-color:#222;color:#fefefe;line-height:22px;text-align:center;opacity:0;transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out;-webkit-animation:slidein 2s ease forwards;animation:slidein 2s ease forwards}
 
 </style>
 </head><body>
@@ -42,13 +42,12 @@ This facility is not supported by your browser. Upgrade to <a href="https://www.
 <button id="start_button" style="border: 0px; background-color: transparent; padding: 0px; display: inline-block;" onclick="startButton(event)"><img alt="Start" id="start_img" src="https://www.google.com/intl/en/chrome/assets/common/images/content/mic-slash.gif"></button>
    </div>
 <div id="results" style="font-size: 16px; font-weight: bold; border: 2px solid green; padding: 15px; text-align:left; min-height: 150px; font-family:'ek mukta'; border-radius: 2px;">
-<span class="final" id="final_span" style="color:blue; padding-right: 3px;"></span> <span class="interim" id="interim_span" style="color:red;"></span>
+<span class="final" id="final_span" style="color:blue; padding-right: 3px;"></span> <span class="interim" id="interim_span" style="color:blue;"></span>
    </div>
 <div id="copy" style="margin-top: 10px;">
 <button class="button" id="copy_button" style="display:none;" onclick="copyButton()">Copy and Paste</button>
     <br>
-<div id="copy_info">
-Press Control-C [Command-C on Mac] to copy text.</div>
+<div id="copy_info"></div>
 <!-- <button class="button" id="email_button" onclick="emailButton()">Create Email</button>
     <div id="email_info">
      <p>
