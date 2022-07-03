@@ -40,6 +40,7 @@ if (boldtelegram.checked) {
         
     
 }
+window.onbeforeunload=function(){return'Your work will be lost.'}
 </script>
 <div class='cnoti' id='snotif'></div>
 <script>function gernatescriptcopy(){document.getElementById("smessage").select(),document.execCommand("copy"),document.getElementById("snotif").innerHTML="<span>Code copied!</span>" };function generate_bold_clear(){document.getElementById("smessage").value=""};
