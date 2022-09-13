@@ -383,7 +383,7 @@ footer {
       <div id="editor">
         <p>Just some text.</p>
       </div>
-      <textarea class="source"></textarea>
+      <textarea class="source" style="background:#222;color:#fff;font-size:18px"></textarea>
     </div>
 </main>
 
@@ -430,6 +430,9 @@ footer {
       const editor_toolbar = document.querySelector('.ck.ck-toolbar.ck-toolbar_grouping');
       editor_toolbar.appendChild(source_toggle);
 	  } setTimeout(sourcecode, 4000)
+	
+	
+window.onbeforeunload=function(){return'Your work will be lost.'}
 </script>
 
 </body>
